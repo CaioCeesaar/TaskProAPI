@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Controllers\" />
+      <Folder Include="DTOs\" />
+      <Folder Include="Filters\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Controllers\WeatherForecastController.cs" />
+      <Compile Remove="WeatherForecast.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TaskProCore\TaskProCore.csproj" />
+      <ProjectReference Include="..\TaskProInfra\TaskProInfra.csproj" />
+      <ProjectReference Include="..\TaskProTests\TaskProTests.csproj" />
+    </ItemGroup>
+
+</Project>
