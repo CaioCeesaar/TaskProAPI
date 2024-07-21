@@ -6,7 +6,7 @@ using TaskProCore.Models.Notifications;
 
 namespace TaskProCore.Services;
 
-public abstract class BaseService(INotificador notificador)
+public abstract class BaseService(INotifier notifier)
 {
     private void Notify(ValidationResult validationResult)
     {
@@ -18,7 +18,7 @@ public abstract class BaseService(INotificador notificador)
     
     protected void Notify (string mensagem)
     {
-        notificador.Handle(new Notification(mensagem));
+        notifier.Handle(new Notification(mensagem));
     }
     
     

@@ -3,7 +3,7 @@ using TaskProCore.Models.Notifications;
 
 namespace TaskProCore.Interfaces;
 
-public interface INotificador
+public interface INotifier
 {
     bool HaveNotification();
     List<Notification> GetNotifications();
