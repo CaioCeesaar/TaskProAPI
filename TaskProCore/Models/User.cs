@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TaskProCore.Entities;
+namespace TaskProCore.Models;
 
 public class User : Entity
 {

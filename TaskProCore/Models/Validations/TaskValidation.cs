@@ -1,19 +1,23 @@
 ﻿using FluentValidation;
+using TaskProCore.Models;
 
 namespace TaskProCore.Entities.Validations;
 
-public class ProjectValidation : AbstractValidator<Project>
+public class TaskValidation : AbstractValidator<Task>
 {
-    public ProjectValidation()
+    public TaskValidation()
     {
-        RuleFor(p => p.Name)
+        RuleFor(t => t.Name)
             .NotEmpty().WithMessage("Name is required.")
             .MaximumLength(100).WithMessage("Name must not exceed 100 characters.");
         
-        RuleFor(p => p.Description)
+        RuleFor(t => t.Description)
             .MaximumLength(1000).WithMessage("Description must not exceed 1000 characters.");
         
-        RuleFor(p => p.Status)
+        RuleFor(t => t.Status)
             .IsInEnum().WithMessage("Invalid status.");
+        
+        RuleFor(t => t.Priority)
+            .IsInEnum().WithMessage("Invalid priority.");
     }
 }

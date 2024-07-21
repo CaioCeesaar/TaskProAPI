@@ -2,9 +2,11 @@
    <PropertyGroup>
        <OutputType>Library</OutputType>
        <TargetFramework>net8.0</TargetFramework>
+       <Nullable>enable</Nullable>
    </PropertyGroup>
    <ItemGroup>
      <Compile Remove="Program.cs" />
+     <Compile Include="Models\Comment.cs" />
    </ItemGroup>
    <ItemGroup>
      <Content Remove="appsettings.Development.json" />

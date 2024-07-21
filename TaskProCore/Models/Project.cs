@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using TaskProCore.Entities;
 using TaskProCore.Entities.Enums;
 
-namespace TaskProCore.Entities;
+namespace TaskProCore.Models;
 
 public class Project : Entity
 {

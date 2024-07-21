@@ -1,4 +1,5 @@
 ﻿using FluentValidation;
+using TaskProCore.Models;
 
 namespace TaskProCore.Entities.Validations;
 

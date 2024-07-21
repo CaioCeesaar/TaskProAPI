@@ -1,4 +1,5 @@
 ﻿using System;
+using TaskProCore.Models;
 
 namespace TaskProCore.Entities;
 

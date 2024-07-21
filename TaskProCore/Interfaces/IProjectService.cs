@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using TaskProCore.Entities;
+using TaskProCore.Models;
 using Task = System.Threading.Tasks.Task;
 
 namespace TaskProCore.Interfaces;
