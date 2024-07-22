@@ -7,15 +7,11 @@ namespace TaskProCore.Models;
 
 public class Task : Entity
 {
-    public string Name { get; set; }
+    public string Title { get; set; }
     
     public string Description { get; set; }
     
     public DateTime CreateDate { get; set; } = DateTime.Now;
-
-    public DateTime StartDate { get; set; }
-    
-    public DateTime EndDate { get; set; }
     
     public Status Status { get; set; }
     
@@ -24,4 +20,6 @@ public class Task : Entity
     public int UserId { get; set; }
     
     public ICollection<Comment> Comments { get; set; }
+    
+    public ICollection<ProjectTask> ProjectTasks { get; set; }
 }

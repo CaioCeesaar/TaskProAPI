@@ -1,6 +1,7 @@
 ﻿using FluentValidation;
+using TaskProCore.Entities;
 
-namespace TaskProCore.Entities.Validations;
+namespace TaskProCore.Models.Validations;
 
 public class CommentValidation : AbstractValidator<Comment>
 {

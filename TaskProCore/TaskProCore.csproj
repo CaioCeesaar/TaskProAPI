@@ -7,6 +7,8 @@
    <ItemGroup>
      <Compile Remove="Program.cs" />
      <Compile Include="Models\Comment.cs" />
+     <Compile Remove="Models\Validations\UserValidation.cs" />
+     <Compile Remove="Models\User.cs" />
    </ItemGroup>
    <ItemGroup>
      <Content Remove="appsettings.Development.json" />

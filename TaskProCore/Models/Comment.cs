@@ -10,7 +10,4 @@ public class Comment : Entity
     public DateTime CreateDate { get; set; } = DateTime.UtcNow;
 
     public int TaskId { get; set; }
-    
-    public int UserId { get; set; }
-    
 }

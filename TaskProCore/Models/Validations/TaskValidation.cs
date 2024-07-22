@@ -1,13 +1,12 @@
 ﻿using FluentValidation;
-using TaskProCore.Models;
 
-namespace TaskProCore.Entities.Validations;
+namespace TaskProCore.Models.Validations;
 
 public class TaskValidation : AbstractValidator<Task>
 {
     public TaskValidation()
     {
-        RuleFor(t => t.Name)
+        RuleFor(t => t.Title)
             .NotEmpty().WithMessage("Name is required.")
             .MaximumLength(100).WithMessage("Name must not exceed 100 characters.");
         

@@ -7,11 +7,11 @@ namespace TaskProCore.Interfaces;
 
 public interface IRepository<TEntity> : IDisposable where TEntity : class
 {
-    Task<TEntity> GetById(Guid id);
+    Task<TEntity> GetById(int id);
     Task<IEnumerable<TEntity>> GetAll();
     Task Add(TEntity entity);
     Task Update(TEntity entity);
-    Task Remove(Guid id);
+    Task Remove(int id);
     Task <IEnumerable<TEntity>> Find(Func<TEntity, bool> predicate);
     Task<int> SaveChanges(); 
 }
