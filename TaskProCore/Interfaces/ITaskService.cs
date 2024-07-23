@@ -8,8 +8,6 @@ namespace TaskProCore.Interfaces;
 
 public interface ITaskService : IDisposable
 {
-    Task<IEnumerable<TaskProCore.Models.Task>> GetAllTasksAsync();
-    Task<Project> GetProjectByIdAsync(int id);
     Task<Project> CreateProjectAsync(Project project);
     Task UpdateProjectAsync(Project project);
     Task DeleteProjectAsync(int id);
